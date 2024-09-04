@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Ring Modules</title>
+    <meta content="TeXmacs 2.1" name="generator"></meta>
+    <style type="text/css">
+      body { text-align: justify } h5 { display: inline; padding-right: 1em }
+      h6 { display: inline; padding-right: 1em } table { border-collapse:
+      collapse } td { padding: 0.2em; vertical-align: baseline } dt { float:
+      left; min-width: 1.75em; text-align: right; padding-right: 0.75em;
+      font-weight: bold; } dd { margin-left: 2.75em; padding-bottom: 0.25em; }
+      dd p { padding-top: 0em; } .subsup { display: inline; vertical-align:
+      -0.2em } .subsup td { padding: 0px; text-align: left} .fraction {
+      display: inline; vertical-align: -0.8em } .fraction td { padding: 0px;
+      text-align: center } .wide { position: relative; margin-left: -0.4em }
+      .accent { position: relative; margin-left: -0.4em; top: -0.1em }
+      .title-block { width: 100%; text-align: center } .title-block p {
+      margin: 0px } .compact-block p { margin-top: 0px; margin-bottom: 0px }
+      .left-tab { text-align: left } .center-tab { text-align: center }
+      .balloon-anchor { border-bottom: 1px dotted #000000; outline: none;
+      cursor: help; position: relative; } .balloon-anchor [hidden] {
+      margin-left: -999em; position: absolute; display: none; }
+      .balloon-anchor: hover [hidden] { position: absolute; left: 1em; top:
+      2em; z-index: 99; margin-left: 0; width: 500px; display: inline-block; }
+      .balloon-body { } .ornament { border-width: 1px; border-style: solid;
+      border-color: black; display: inline-block; padding: 0.2em; } .right-tab
+      { float: right; position: relative; top: -1em; } .no-breaks {
+      white-space: nowrap; } 
+    </style>
+  </head>
+  <body>
+    <div class="toggle" style="display: none">
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+    </div>
+    <table class="title-block" style="margin-bottom: 2em">
+      <tr>
+        <td><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
+          <tr>
+            <td><font style="font-size: 168.2%"><strong>Ring Modules</strong></font></td>
+          </tr>
+        </table><div class="compact-block" style="margin-top: 1em; margin-bottom: 1em">
+          <table class="title-block">
+            <tr>
+              <td><p style="margin-top: 0.5em; margin-bottom: 0.5em">
+                <div style="display: inline">
+                  <span style="margin-left: 0pt"></span>
+                </div>
+                <table style="display: inline-table; vertical-align: middle">
+                  <tbody><tr>
+                    <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em; width: 100%"><center>
+                      <p>
+                        <class style="font-variant: small-caps">by Anamitro Biswas</class>
+                      </p>
+                    </center></td>
+                  </tr></tbody>
+                </table>
+              </p></td>
+            </tr>
+          </table>
+        </div><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
+          <tr>
+            <td><i></i></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    <h2 id="auto-1">1<span style="margin-left: 1em"></span>Group action<span style="margin-left: 1em"></span></h2>
+    <p>
+      Let <img src="modules-1.png" style="margin-left: -0.0564187327823691em; margin-bottom: -0.0113278236914601em; margin-right: -0.0225674931129476em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img> be any set and <img src="modules-2.png" style="margin-left: -0.0225674931129477em; margin-bottom: -4.40771349862271e-5em; margin-right: -0.0225674931129476em; margin-top: -0.0451349862258953em; vertical-align: -0.0225234159779614em; height: 0.756011019283747em"></img> a
+      group written here in a multiplicative way. We define a <em>group
+      action</em> as a function <img src="modules-3.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0450909090909091em; margin-right: -0.0225674931129483em; margin-top: -0.0338512396694215em; vertical-align: -0.214347107438017em; height: 0.902699724517906em"></img> such that
+    </p>
+    <ul>
+      <p>
+        <dt>
+          (i)
+        </dt>
+        <dd>
+          <p>
+            <img src="modules-4.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0450909090909091em; margin-right: -0.0225674931129483em; margin-top: -0.0338512396694215em; vertical-align: -0.214347107438017em; height: 0.902699724517906em"></img> for all <img src="modules-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0450909090909091em; margin-right: -0.0225674931129483em; margin-top: -0.0451349862258953em; vertical-align: -0.214347107438017em; height: 0.902699724517906em"></img> and all
+            <span class="no-breaks"><img src="modules-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0112396694214876em; margin-right: -0.0225674931129478em; margin-top: -0.0451349862258953em; vertical-align: -0.0338071625344353em; height: 0.756011019283747em"></img>;</span>
+          </p>
+        </dd>
+      </p>
+      <p>
+        <dt>
+          (ii)
+        </dt>
+        <dd>
+          <p>
+            <img src="modules-7.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0112396694214876em; margin-right: -0.0225674931129474em; margin-top: -0.0338512396694215em; vertical-align: -0.165421487603306em; height: 0.887625344352617em"></img> for all <span class="no-breaks"><img src="modules-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0112396694214876em; margin-right: -0.0225674931129478em; margin-top: -0.0451349862258953em; vertical-align: -0.0338071625344353em; height: 0.756011019283747em"></img>.</span>
+          </p>
+        </dd>
+      </p>
+    </ul>
+    <p>
+      We informally say that the group <img src="modules-2.png" style="margin-left: -0.0225674931129477em; margin-bottom: -4.40771349862271e-5em; margin-right: -0.0225674931129476em; margin-top: -0.0451349862258953em; vertical-align: -0.0225234159779614em; height: 0.756011019283747em"></img> &ldquo;acts
+      on&rdquo; the set <span class="no-breaks"><img src="modules-1.png" style="margin-left: -0.0564187327823691em; margin-bottom: -0.0113278236914601em; margin-right: -0.0225674931129476em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img>;</span> <span
+      class="no-breaks"><img src="modules-8.png" style="margin-left: -0.0225674931129477em; margin-bottom: -4.40771349862271e-5em; margin-right: -0.0225674931129478em; margin-top: -0.0451349862258953em; vertical-align: -0.0225234159779614em; height: 0.756011019283747em"></img>.</span>
+    </p>
+    <p>
+      For some <span class="no-breaks"><img src="modules-9.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0450909090909091em; margin-right: -0.0225674931129478em; margin-top: -0.0451349862258953em; vertical-align: -0.214347107438017em; height: 0.902699724517906em"></img>,</span> define <span
+      class="no-breaks"><img src="modules-10.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0450909090909091em; margin-right: -0.0225674931129483em; margin-top: -0.0338512396694215em; vertical-align: -0.312110192837466em; height: 1.00046280991736em"></img>.</span> Then, <span class="no-breaks"><img src="modules-11.png"
+      style="margin-left: -0.0225674931129477em; margin-bottom: 0.0450909090909091em; margin-right: -0.0225674931129478em; margin-top: -0.0451349862258953em; vertical-align: -0.312110192837466em; height: 1.00046280991736em"></img>,</span> i.e., <img src="modules-12.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0450909090909091em; margin-right: -0.0225674931129477em; margin-top: -0.0030853994490358em; vertical-align: -0.312110192837466em; height: 0.732738292011019em"></img> is essentially a
+      permutation of <span class="no-breaks"><img src="modules-1.png" style="margin-left: -0.0564187327823691em; margin-bottom: -0.0113278236914601em; margin-right: -0.0225674931129476em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img>.</span> This is
+      because, we can similarly have a <img src="modules-13.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0450909090909091em; margin-right: -0.0225674931129478em; margin-top: -0.0030853994490358em; vertical-align: -0.374214876033058em; height: 0.794842975206612em"></img> that acts as
+      both left and right inverse of <span class="no-breaks"><img src="modules-12.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0450909090909091em; margin-right: -0.0225674931129477em; margin-top: -0.0030853994490358em; vertical-align: -0.312110192837466em; height: 0.732738292011019em"></img>,</span>
+      making <img src="modules-12.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0450909090909091em; margin-right: -0.0225674931129477em; margin-top: -0.0030853994490358em; vertical-align: -0.312110192837466em; height: 0.732738292011019em"></img> a bijective map. Indeed, <span class="no-breaks"><img
+      src="modules-14.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0450909090909091em; margin-right: -0.0225674931129465em; margin-top: 0em; vertical-align: -0.374214876033058em; height: 1.222391184573em"></img>.</span> Also, <img src="modules-15.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0450909090909091em; margin-right: -0.0225674931129483em; margin-top: -0.0451349862258953em; vertical-align: -0.312110192837466em; height: 1.00046280991736em"></img> is a
+      homomorphism, i.e., <span class="no-breaks"><img src="modules-16.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0450909090909091em; margin-right: -0.0225674931129483em; margin-top: -0.0338512396694215em; vertical-align: -0.312110192837466em; height: 1.00046280991736em"></img>.</span>
+    </p>
+    <h2 id="auto-2">2<span style="margin-left: 1em"></span>Ring Module<span style="margin-left: 1em"></span></h2>
+    <p>
+      A module <img src="modules-17.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0451349862258953em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img> over a ring <img src="modules-18.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0225674931129476em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img> is
+      an action of <img src="modules-18.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0225674931129476em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img> on <img src="modules-17.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0451349862258953em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img> in both
+      additive and multiplicative ways, subject to the following conditions:
+    </p>
+    <h3 id="auto-3">2.1<span style="margin-left: 1em"></span>Annihilator<span style="margin-left: 1em"></span></h3>
+    <p>
+      If we have an ideal <img src="modules-19.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0451349862258953em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img> of <img src="modules-18.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0225674931129476em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img>
+      such that <img src="modules-20.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0225674931129478em; margin-top: -0.0338512396694215em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img> for all <img src="modules-21.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0112396694214876em; margin-right: -0.0451349862258954em; margin-top: -0.0451349862258953em; vertical-align: -0.0338071625344353em; height: 0.756011019283747em"></img> and
+      <span class="no-breaks"><img src="modules-22.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0112396694214876em; margin-right: -0.0451349862258952em; margin-top: -0.0451349862258953em; vertical-align: -0.0338071625344353em; height: 0.756011019283747em"></img>,</span> then <img src="modules-19.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0451349862258953em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img>
+      is called an <em>annihilator</em> of <span class="no-breaks"><img src="modules-17.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0451349862258953em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img>.</span>
+      In that case we can visualize <img src="modules-17.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0451349862258953em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img> as a ring module
+      over the quotient ring <img src="modules-23.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0451349862258954em; margin-top: -0.0338512396694215em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img> where <img src="modules-24.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0235371900826447em; margin-right: -0.0225674931129483em; margin-top: -0.0254325068870523em; vertical-align: -0.258556473829201em; height: 1.08323966942149em"></img>
+      where <span class="no-breaks"><img src="modules-25.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0450909090909091em; margin-right: -0.0451349862258947em; margin-top: -0.0451349862258953em; vertical-align: -0.157928374655647em; height: 0.846280991735537em"></img>.</span>
+    </p>
+    <h3 id="auto-4">2.2<span style="margin-left: 1em"></span>Field<span style="margin-left: 1em"></span></h3>
+    <p>
+      If the ring is actually a field (i.e., commutative and without any zero
+      divisors), then the module is essentially a vector space over the field.
+      For commutaive rings a right module is also a left module. Now, if <img
+      src="modules-26.png" style="margin-left: -0.0225674931129477em; margin-bottom: -4.40771349862271e-5em; margin-right: -0.101553719008264em; margin-top: -0.0451349862258953em; vertical-align: -0.0225234159779614em; height: 0.756011019283747em"></img> is a vector space over a field <span class="no-breaks"><img src="modules-27.png"
+      style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0451349862258953em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img>,</span> then <img src="modules-26.png" style="margin-left: -0.0225674931129477em; margin-bottom: -4.40771349862271e-5em; margin-right: -0.101553719008264em; margin-top: -0.0451349862258953em; vertical-align: -0.0225234159779614em; height: 0.756011019283747em"></img> is also a module over
+      the polynomial ring <span class="no-breaks"><img src="modules-28.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0563746556473829em; margin-right: -0.0225674931129476em; margin-top: -0.0451349862258953em; vertical-align: -0.169212121212121em; height: 0.846280991735537em"></img>.</span> We can
+      assign a linear operator <img src="modules-29.png" style="margin-left: -0.0225674931129477em; margin-bottom: -4.40771349862271e-5em; margin-right: -0.101553719008264em; margin-top: -0.0451349862258953em; vertical-align: -0.0225234159779614em; height: 0.756011019283747em"></img> and with respect to
+      that define for <span class="no-breaks"><img src="modules-30.png" style="margin-left: -0.0564187327823691em; margin-bottom: 0.0450909090909091em; margin-right: -0.0225674931129483em; margin-top: 0em; vertical-align: -0.214347107438017em; height: 1.06252341597796em"></img>,</span>
+    </p>
+    <center>
+      <img src="modules-31.png" style="margin-left: -0.0564187327823691em; margin-bottom: 0.0450909090909091em; margin-right: -0.0225674931129447em; margin-top: 0em; vertical-align: -0.214347107438017em; height: 1.06252341597796em"></img>
+    </center>
+    <p>
+      which is consistent with its restriction on <span class="no-breaks"><img src="modules-27.png"
+      style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0451349862258953em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img>,</span> where <span class="no-breaks"><img src="modules-32.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0112396694214876em; margin-right: -0.0225674931129478em; margin-top: -0.0451349862258953em; vertical-align: -0.165421487603306em; height: 0.661950413223141em"></img>.</span>
+      Note that this extended action depends upon the linear operator <img
+      src="modules-33.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.101553719008264em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img> chosen. If <img src="modules-33.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.101553719008264em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img> is identically
+      <span class="no-breaks"><img src="modules-34.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0225674931129477em; margin-top: -0.0338512396694215em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img>,</span> we have the same module
+      structure with no more information about the elements other than those
+      of <span class="no-breaks"><img src="modules-27.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0451349862258953em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img>.</span> On the other hand, if
+      <img src="modules-33.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.101553719008264em; margin-top: -0.0451349862258953em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img> is the shift operator, <span class="no-breaks"><img src="modules-35.png"
+      style="margin-left: -0.0225674931129477em; margin-bottom: 0.0225234159779614em; margin-right: -0.0225674931129483em; margin-top: -0.0338512396694215em; vertical-align: -0.191779614325069em; height: 0.902699724517906em"></img>,</span> we get a different <span class="no-breaks"><img src="modules-28.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0563746556473829em; margin-right: -0.0225674931129476em; margin-top: -0.0451349862258953em; vertical-align: -0.169212121212121em; height: 0.846280991735537em"></img>-module</span>
+      structure of <span class="no-breaks"><img src="modules-26.png" style="margin-left: -0.0225674931129477em; margin-bottom: -4.40771349862271e-5em; margin-right: -0.101553719008264em; margin-top: -0.0451349862258953em; vertical-align: -0.0225234159779614em; height: 0.756011019283747em"></img>.</span>
+    </p>
+  </body>
+</html>
